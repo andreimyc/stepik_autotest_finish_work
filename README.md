@@ -1,1 +1,1 @@
-# stepik_autotest_finish_work
+Заключительная работа по автоматизированому тестированию Python + Selenium
