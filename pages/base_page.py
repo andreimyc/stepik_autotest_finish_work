@@ -10,7 +10,8 @@ class BasePage():
         self.browser.implicitly_wait(timeout)
 
     def open(self):
-        self.browser = webdriver.Chrome()
+        if not self.browser.current_url:  # Проверяем, что браузер не открыт
+            self.browser = webdriver.Chrome()
         self.browser.get(self.url)
 
     def is_element_present(self, how, what):
